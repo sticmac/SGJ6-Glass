@@ -1,0 +1,50 @@
+using UnityEngine;
+using Sticmac.EventSystem;
+
+public class NPCUIMaster : MonoBehaviour
+{
+    public enum UIState
+    {
+        None,
+        ActionChoice,
+        Dialog
+    }
+
+    [SerializeField] ActionChoiceUI _actionChoiceUI;
+    [SerializeField] DialogUI _dialogUI;
+    [SerializeField] GameEvent _onEnterUIMode;
+    [SerializeField] GameEvent _onExitUIMode;
+    
+    private UIState _currentState;
+    public UIState CurrentState => _currentState;
+
+    private void Start() {
+        _currentState = UIState.None;
+    }
+
+    public void Activate(Dialog dialog, Accusation accusation)
+    {
+        if (_currentState == UIState.None)
+        {
+            _actionChoiceUI.Init(dialog, accusation);
+            _actionChoiceUI.Show();
+            _currentState = UIState.ActionChoice;
+            _onEnterUIMode.Raise();
+        }
+    }
+
+    public void StartDialog()
+    {
+        _currentState = UIState.Dialog;
+        _actionChoiceUI.Hide();
+        _dialogUI.Show();
+    }
+
+    public void ExitUIMode()
+    {
+        _onExitUIMode.Raise();
+        _dialogUI.Hide();
+        _actionChoiceUI.Hide();
+        _currentState = UIState.None;
+    }
+}

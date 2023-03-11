@@ -20,6 +20,10 @@ public class PlayerMovement : MonoBehaviour
         _movementRotationOffset = Quaternion.AngleAxis(_movementRotationYOffset, Vector3.up);
     }
 
+    private void OnDisable() {
+        _rb.velocity = Vector3.zero;
+    }
+
     /// <summary>
     /// Manages the player horizontal movement
     /// </summary>
