@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893284447520163988}
   - component: {fileID: 1893284447520163990}
-  - component: {fileID: 1893284447520163991}
+  - component: {fileID: 2206886749035377594}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -47,7 +47,7 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &1893284447520163991
+--- !u!114 &2206886749035377594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,9 +56,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893284447520163989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fc243cf67a91a1579995d7481727f22, type: 3}
+  m_Script: {fileID: 11500000, guid: f272217dafc54d634b3f102d95b97cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _dialog: {fileID: 3955584734844212847}
 --- !u!1 &1893284448048205190
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +90,7 @@ Transform:
   m_Children:
   - {fileID: 1893284448453448880}
   - {fileID: 1893284447520163988}
+  - {fileID: 795797623892927947}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -175,3 +177,54 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2845866507907921869
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 795797623892927947}
+  - component: {fileID: 3955584734844212847}
+  m_Layer: 0
+  m_Name: Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &795797623892927947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845866507907921869}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1893284448048205185}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3955584734844212847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2845866507907921869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8c1f47d43cba60589383add66ffbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogElements:
+  - message: Hello I'm Dummy!
+    author: {fileID: 11400000, guid: dbeb137a92367e0b9a9d885523eb9fdc, type: 2}
+  _onDialogStarted: {fileID: 11400000, guid: 97c2ec860513becb297f01d5558df2fb, type: 2}
+  _onDialogEnded: {fileID: 11400000, guid: fa589d9530d53412eb5f655a2b9badf2, type: 2}
+  _onNewDialogElement: {fileID: 11400000, guid: 77f65194f2908aef09bd94849e1ab642,
+    type: 2}
