@@ -25,10 +25,11 @@ public class PlayerMovement : MonoBehaviour
     /// <param name="input">The player's input for moving</param>
     public void Move(Vector2 input)
     {
-        _movement = new Vector3(input.x, _movement.y, input.y) * _speed;
+        _movement = _movementRotationOffset * new Vector3(input.x, _movement.y, input.y) * _speed;
     }
 
     private void Update() {
-        _characterController.Move(_movementRotationOffset * _movement * Time.deltaTime);
+        _characterController.Move(_movement * Time.deltaTime); // Move character
+        _characterController.transform.LookAt(transform.position + _movement, Vector3.up); // Make character face direction they're moving towards
     }
 }
