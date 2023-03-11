@@ -12,7 +12,8 @@ public class PlayerInteractor : MonoBehaviour
     private List<IInteractable> _interactablesInRange;
     private IInteractable _current;
 
-    private void Awake() {
+    private void Awake()
+    {
         _interactablesInRange = new List<IInteractable>();
     }
 
@@ -27,7 +28,8 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerEnter(Collider other)
+    {
         if (other.TryGetComponent<IInteractable>(out _current))
         {
             _current.InteractorNearby();
@@ -35,7 +37,8 @@ public class PlayerInteractor : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider other) {
+    private void OnTriggerExit(Collider other)
+    {
         if (other.TryGetComponent<IInteractable>(out _current))
         {
             _current.InteractorFarAway();

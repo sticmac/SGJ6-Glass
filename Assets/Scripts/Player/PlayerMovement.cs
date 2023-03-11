@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 _movement;
     private Quaternion _movementRotationOffset;
 
-    private void Awake() {
+    private void Awake()
+    {
         _movementRotationOffset = Quaternion.AngleAxis(_movementRotationYOffset, Vector3.up);
     }
 
@@ -28,7 +29,8 @@ public class PlayerMovement : MonoBehaviour
         _movement = _movementRotationOffset * new Vector3(input.x, _movement.y, input.y) * _speed;
     }
 
-    private void FixedUpdate() {
+    private void FixedUpdate()
+    {
         _rb.velocity = _movement;
         _rb.transform.LookAt(transform.position + _movement, Vector3.up); // Make character face direction they're moving towards
     }

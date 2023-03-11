@@ -13,7 +13,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerMovement _playerMovement;
     [SerializeField] PlayerInteractor _playerInteractor;
 
-    private void Start() {
+    private void Start()
+    {
         // Subscribe to Move input
         _playerInput.actions.FindAction("Move").performed += Move;
         _playerInput.actions.FindAction("Move").canceled += Move;
