@@ -9,9 +9,15 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] CharacterController _characterController;
 
     [Header("Parameters")]
+    [SerializeField] float _movementRotationYOffset = 45;
     [SerializeField] float _speed = 1f;
 
     private Vector3 _movement;
+    private Quaternion _movementRotationOffset;
+
+    private void Awake() {
+        _movementRotationOffset = Quaternion.AngleAxis(_movementRotationYOffset, Vector3.up);
+    }
 
     /// <summary>
     /// Manages the player horizontal movement
@@ -23,6 +29,6 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update() {
-        _characterController.Move(_movement * Time.deltaTime);
+        _characterController.Move(_movementRotationOffset * _movement * Time.deltaTime);
     }
 }
