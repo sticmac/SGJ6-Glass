@@ -21,7 +21,10 @@ public class PlayerInteractor : MonoBehaviour
     /// </summary>
     public void Interact()
     {
-        _interactablesInRange[0].Interact();
+        if (_interactablesInRange.Count > 0)
+        {
+            _interactablesInRange[0].Interact();
+        }
     }
 
     private void OnTriggerEnter(Collider other) {
