@@ -6,7 +6,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Components")]
-    [SerializeField] CharacterController _characterController;
+    [SerializeField] Rigidbody _rb;
 
     [Header("Parameters")]
     [SerializeField] float _movementRotationYOffset = 45;
@@ -28,8 +28,8 @@ public class PlayerMovement : MonoBehaviour
         _movement = _movementRotationOffset * new Vector3(input.x, _movement.y, input.y) * _speed;
     }
 
-    private void Update() {
-        _characterController.Move(_movement * Time.deltaTime); // Move character
-        _characterController.transform.LookAt(transform.position + _movement, Vector3.up); // Make character face direction they're moving towards
+    private void FixedUpdate() {
+        _rb.velocity = _movement;
+        _rb.transform.LookAt(transform.position + _movement, Vector3.up); // Make character face direction they're moving towards
     }
 }
