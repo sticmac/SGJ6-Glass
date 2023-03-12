@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1316844552225355277}
   - component: {fileID: 2731860548642929064}
   - component: {fileID: 147901871826341218}
+  - component: {fileID: 1848579407970966899}
   m_Layer: 0
   m_Name: little champi
   m_TagString: Untagged
@@ -62,7 +63,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -6340113124874419892, guid: 3d954ecb4d44d3d40b40e8b8489696c7, type: 3}
-  - {fileID: 7671817166587205837, guid: 3d954ecb4d44d3d40b40e8b8489696c7, type: 3}
+  - {fileID: 2100000, guid: 6d460b006234319bbb0ffef23d0243f4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,3 +85,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1848579407970966899
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805256840821124279}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.011703504
+  m_Height: 0.013297099
+  m_Direction: 1
+  m_Center: {x: -2.328308e-10, y: 1.6418374e-16, z: 0.011553403}
