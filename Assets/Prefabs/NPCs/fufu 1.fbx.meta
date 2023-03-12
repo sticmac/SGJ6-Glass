@@ -1,25 +1,9 @@
 fileFormatVersion: 2
-guid: eb861dd3ca98f094ab3ff71c82dcf836
+guid: 5582250bb06a0e24da0416d0759a663d
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: outline
-    second: {fileID: 2100000, guid: 6d460b006234319bbb0ffef23d0243f4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: colorFufu
-    second: {fileID: 2100000, guid: e3bedd37342da6142baaf7d01180ec3c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: glassieEyes
-    second: {fileID: 3652040063140413935, guid: d2e30efcceac4d441b39424b0c794832,
-      type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -51,7 +35,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -104,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.5
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
