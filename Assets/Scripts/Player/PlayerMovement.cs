@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Components")]
     [SerializeField] Rigidbody _rb;
+    [SerializeField] Animator _animator;
 
     [Header("Parameters")]
     [SerializeField] float _movementRotationYOffset = 45;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move(Vector2 input)
     {
         _movement = _movementRotationOffset * new Vector3(input.x, _movement.y, input.y) * _speed;
+        _animator.SetFloat("Speed", _movement.sqrMagnitude);
     }
 
     private void FixedUpdate()
