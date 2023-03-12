@@ -27,8 +27,8 @@ public class ActionChoiceUI : MonoBehaviour
 
     public void Hide()
     {
-        _triggerDialogButton.onClick.RemoveListener(_currentNPCDialog.Next);
-        _triggerAccusationButton.onClick.RemoveListener(_currentNPCAccusation.Accuse);
+        _triggerDialogButton.onClick.RemoveAllListeners();
+        _triggerAccusationButton.onClick.RemoveAllListeners();
         _actionChoiceWindow.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
     }

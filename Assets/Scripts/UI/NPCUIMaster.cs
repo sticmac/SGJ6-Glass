@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 using Sticmac.EventSystem;
 
 public class NPCUIMaster : MonoBehaviour

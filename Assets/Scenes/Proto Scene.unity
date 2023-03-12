@@ -404,7 +404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &64177854
 GameObject:
@@ -502,7 +502,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &64177859
 Rigidbody:
@@ -699,13 +699,13 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].author
       value: 
-      objectReference: {fileID: 11400000, guid: da33f0a10186b1ae59ef4a4f8df029aa,
+      objectReference: {fileID: 11400000, guid: 64b102cee9987e57b8da05ef20989f0e,
         type: 2}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -716,7 +716,8 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].message
-      value: I'm Joan-Probe.
+      value: Sandy cuisine bien les plats que tout le monde aime, mais il y a un
+        truc dans sa soupe de lichen qui ne me plait pas.
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -1005,7 +1006,7 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -1022,7 +1023,9 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].message
-      value: I'm Joan-Probe.
+      value: "Un jour, Sandy, d\xE9sesp\xE9r\xE9e de nos comp\xE9tences en cuisine,
+        nous a appris \xE0 Silvicium et moi \xE0 cuisiner avec l\u2019un des ingr\xE9dients.
+        Depuis, \xE7a va mieux !"
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -1121,7 +1124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -6.152, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
@@ -1411,7 +1414,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
@@ -1462,7 +1465,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &453394667
 GameObject:
@@ -2116,7 +2119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878409215
 GameObject:
@@ -2327,7 +2330,7 @@ PrefabInstance:
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.8
+      value: -4.21
       objectReference: {fileID: 0}
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -2337,7 +2340,7 @@ PrefabInstance:
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -9.47
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -2398,7 +2401,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _dialogElements.Array.data[0].author
       value: 
-      objectReference: {fileID: 11400000, guid: d3bdfa914fe9cdcf5be3d07514ab54b2,
+      objectReference: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7,
         type: 2}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -2409,8 +2412,9 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].message
-      value: "Les aliments favoris du groupe sont le lichen et la chauve-souris,
-        mais il y en a un que je n\u2019aime vraiment pas cuisiner. "
+      value: "Dans le groupe, il y a quelqu\u2019un qui sait tout cuisiner. M\xEAme
+        si j\u2019adore Sandy, il y a quelqu\u2019un qui l\u2019a d\xE9pass\xE9.
+        J\u2019admire le talent de ces deux l\xE0."
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -2522,6 +2526,18 @@ Transform:
   m_Father: {fileID: 1812231032}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &920375059 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4925054827848894131, guid: 53bdf0c12e2f04d38bc0d4916507f298,
+    type: 3}
+  m_PrefabInstance: {fileID: 7584402024191044520}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &921798852
 GameObject:
   m_ObjectHideFlags: 0
@@ -2551,7 +2567,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &947783163
 GameObject:
@@ -3063,6 +3079,65 @@ Transform:
   m_Father: {fileID: 1812231032}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1309310586
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1309310588}
+  - component: {fileID: 1309310587}
+  m_Layer: 0
+  m_Name: On Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1309310587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309310586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb0ba5e202af3b04cb507b08a52a3fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _onStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1744588324}
+        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!4 &1309310588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1309310586}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1065.326, y: 423.62863, z: 114.0066}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1361251259
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,13 +3263,13 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].author
       value: 
-      objectReference: {fileID: 11400000, guid: da33f0a10186b1ae59ef4a4f8df029aa,
+      objectReference: {fileID: 11400000, guid: d3bdfa914fe9cdcf5be3d07514ab54b2,
         type: 2}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -3205,7 +3280,8 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].message
-      value: I'm Joan-Probe.
+      value: "Les aliments favoris du groupe sont le lichen et la chauve-souris,
+        mais il y en a un que je n\u2019aime vraiment pas cuisiner."
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -3232,6 +3308,8 @@ GameObject:
   - component: {fileID: 1446497725}
   - component: {fileID: 1446497724}
   - component: {fileID: 1446497723}
+  - component: {fileID: 1446497728}
+  - component: {fileID: 1446497727}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -3312,15 +3390,74 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2111991236}
   - {fileID: 1009528443}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1446497727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446497722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: e0f5fce35f6ba83029c1937752cfb5d7, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2111991233}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1446497728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1446497722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: a5c00b761a1455b48a608539a07f5e32, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2111991233}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1001 &1483632768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3401,13 +3538,13 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].author
       value: 
-      objectReference: {fileID: 11400000, guid: d3bdfa914fe9cdcf5be3d07514ab54b2,
+      objectReference: {fileID: 11400000, guid: e432f9d2fb08f8a39b39e2c233fab596,
         type: 2}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -3418,7 +3555,8 @@ PrefabInstance:
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _dialogElements.Array.data[0].message
-      value: I'm Alice.
+      value: "Sandy fait de tr\xE8s bonnes salades de lichen. Elle devrait faire
+        breveter la recette !"
       objectReference: {fileID: 0}
     - target: {fileID: 3955584734844212847, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -3468,7 +3606,7 @@ Transform:
   - {fileID: 137007361}
   - {fileID: 880753237}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1590597743
 GameObject:
@@ -3499,7 +3637,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603351073
 GameObject:
@@ -3570,8 +3708,177 @@ Transform:
   m_Children:
   - {fileID: 755455310}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 37.5, y: 45, z: 0}
+--- !u!1 &1744588322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1744588325}
+  - component: {fileID: 1744588324}
+  - component: {fileID: 1744588327}
+  - component: {fileID: 1744588326}
+  - component: {fileID: 1744588328}
+  m_Layer: 0
+  m_Name: Starting Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1744588324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744588322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8c1f47d43cba60589383add66ffbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogElements:
+  - message: Je suis vivante ?
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: Je suis vivante !
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: "Mais d'ailleurs je suis tomb\xE9 o\xF9 ? J'y vois rien\u2026"
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: Eh mais attends ! Je suis bioluminescente !
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: "Ma lanterne \xE9claire devant moi !"
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  _onDialogStarted: {fileID: 11400000, guid: a5c00b761a1455b48a608539a07f5e32, type: 2}
+  _onDialogEnded: {fileID: 11400000, guid: e0f5fce35f6ba83029c1937752cfb5d7, type: 2}
+  _onNewDialogElement: {fileID: 11400000, guid: 77f65194f2908aef09bd94849e1ab642,
+    type: 2}
+--- !u!4 &1744588325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744588322}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1492848, y: 0.64545536, z: -2.052834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1744588326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744588322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: e0f5fce35f6ba83029c1937752cfb5d7, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fa589d9530d53412eb5f655a2b9badf2, type: 2}
+        m_TargetAssemblyTypeName: Sticmac.EventSystem.GameEvent, Sticmac.EventSystem.Runtime
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1744588328}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1744588327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744588322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: a5c00b761a1455b48a608539a07f5e32, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 97c2ec860513becb297f01d5558df2fb, type: 2}
+        m_TargetAssemblyTypeName: Sticmac.EventSystem.GameEvent, Sticmac.EventSystem.Runtime
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1744588328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1744588322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b241f67e47b12244c8ec11d9a37c6b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 920375059}
+  _selectedActionMapName: Player
+  _selectedActionName: Interact
+  _eventsActivationMode: 0
+  StartedUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  PerformedUnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1744588324}
+        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  CanceledUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1789296991 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6215262111309214823, guid: 8990f56c2258a512fb40b75bd7d01a47,
@@ -3632,7 +3939,7 @@ Transform:
   - {fileID: 1171764380}
   - {fileID: 878409219}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1968329499 stripped
 Transform:
@@ -3669,7 +3976,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2021414921
 GameObject:
@@ -3768,6 +4075,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021414921}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2111991233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2111991236}
+  - component: {fileID: 2111991235}
+  - component: {fileID: 2111991234}
+  m_Layer: 0
+  m_Name: Black Screen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2111991234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111991233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2111991235
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111991233}
+  m_CullTransparentMesh: 1
+--- !u!224 &2111991236
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111991233}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1446497726}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1893284447688802253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3783,7 +4166,7 @@ PrefabInstance:
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.8999996
+      value: 2.1000004
       objectReference: {fileID: 0}
     - target: {fileID: 1893284448048205185, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
@@ -3892,7 +4275,7 @@ PrefabInstance:
     - target: {fileID: 4739634525690978861, guid: 91cb22e789311079e817763d99ff51c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4739634525690978861, guid: 91cb22e789311079e817763d99ff51c2,
         type: 3}
@@ -3971,7 +4354,7 @@ PrefabInstance:
     - target: {fileID: 6215262109992557379, guid: 8990f56c2258a512fb40b75bd7d01a47,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6215262109992557379, guid: 8990f56c2258a512fb40b75bd7d01a47,
         type: 3}
@@ -4077,6 +4460,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2665459634611534072, guid: 53bdf0c12e2f04d38bc0d4916507f298,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3178561350421613244, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
       propertyPath: m_Name
@@ -4085,7 +4473,7 @@ PrefabInstance:
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}

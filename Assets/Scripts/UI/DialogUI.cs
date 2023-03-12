@@ -8,6 +8,13 @@ public class DialogUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI _authorText;
     [SerializeField] TextMeshProUGUI _messageText;
 
+    private Dialog _currentDialog;
+
+    private void Init(Dialog dialog)
+    {
+        _currentDialog = dialog;
+    }
+
     private void Reset() {
         _dialogWindow = gameObject;
     }
