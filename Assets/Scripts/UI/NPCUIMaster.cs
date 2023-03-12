@@ -15,6 +15,7 @@ public class NPCUIMaster : MonoBehaviour
     [SerializeField] ActionChoiceUI _actionChoiceUI;
     [SerializeField] DialogUI _dialogUI;
     [SerializeField] GameOverUI _gameOverUI;
+    [SerializeField] GameObject _winUI;
     [SerializeField] GameEvent _onEnterUIMode;
     [SerializeField] GameEvent _onExitUIMode;
     
@@ -56,5 +57,12 @@ public class NPCUIMaster : MonoBehaviour
         _actionChoiceUI.Hide();
         _gameOverUI.Show();
         _currentState = UIState.GameOver;
+    }
+
+    public void ShowWinUI()
+    {
+        _dialogUI.Hide();
+        _actionChoiceUI.Hide();
+        _winUI.SetActive(true);
     }
 }
