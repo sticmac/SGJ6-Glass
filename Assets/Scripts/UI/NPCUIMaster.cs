@@ -7,7 +7,8 @@ public class NPCUIMaster : MonoBehaviour
     {
         None,
         ActionChoice,
-        Dialog
+        Dialog,
+        GameOver
     }
 
     [SerializeField] ActionChoiceUI _actionChoiceUI;
@@ -53,5 +54,6 @@ public class NPCUIMaster : MonoBehaviour
     {
         _actionChoiceUI.Hide();
         _gameOverUI.Show();
+        _currentState = UIState.GameOver;
     }
 }
