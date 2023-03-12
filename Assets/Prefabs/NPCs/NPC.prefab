@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f272217dafc54d634b3f102d95b97cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _actionChoiceUI: {fileID: 0}
+  _uiMaster: {fileID: 0}
   _dialog: {fileID: 3955584734844212847}
   _accusation: {fileID: 5703222445155220086}
 --- !u!1 &1893284448048205190
@@ -274,3 +274,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _isProbe: 0
+  _onProbeFound: {fileID: 11400000, guid: b29d212916fffd55f9423c115d4f8852, type: 2}
+  _onProbeNotFound: {fileID: 11400000, guid: 9597bf237ab13a30d93b5ef15fa8d174, type: 2}

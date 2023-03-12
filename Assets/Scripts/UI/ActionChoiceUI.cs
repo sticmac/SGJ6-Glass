@@ -22,11 +22,13 @@ public class ActionChoiceUI : MonoBehaviour
     {
         _actionChoiceWindow.SetActive(true);
         _triggerDialogButton.onClick.AddListener(_currentNPCDialog.Next);
+        _triggerAccusationButton.onClick.AddListener(_currentNPCAccusation.Accuse);
     }
 
     public void Hide()
     {
         _triggerDialogButton.onClick.RemoveListener(_currentNPCDialog.Next);
+        _triggerAccusationButton.onClick.RemoveListener(_currentNPCAccusation.Accuse);
         _actionChoiceWindow.SetActive(false);
         EventSystem.current.SetSelectedGameObject(null);
     }
