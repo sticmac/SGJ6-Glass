@@ -404,7 +404,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &64177854
 GameObject:
@@ -1031,6 +1031,11 @@ PrefabInstance:
         type: 3}
       propertyPath: _dialogElements.Array.data[1].message
       value: Huh, Joan-Pol. Sorry.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703222445155220086, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
+      propertyPath: _isProbe
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0049522e89d2c0de7a7fd3afaebe2395, type: 3}
@@ -2982,6 +2987,204 @@ Transform:
   m_Father: {fileID: 1812231032}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1259291804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1259291809}
+  - component: {fileID: 1259291808}
+  - component: {fileID: 1259291807}
+  - component: {fileID: 1259291806}
+  - component: {fileID: 1259291805}
+  m_Layer: 0
+  m_Name: Followup Dialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1259291805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b241f67e47b12244c8ec11d9a37c6b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 920375059}
+  _selectedActionMapName: Player
+  _selectedActionName: Interact
+  _eventsActivationMode: 0
+  StartedUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  PerformedUnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1259291808}
+        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  CanceledUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1259291806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: fcdcb7d42cd361df8bf04d20bcbaa313, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: fa589d9530d53412eb5f655a2b9badf2, type: 2}
+        m_TargetAssemblyTypeName: Sticmac.EventSystem.GameEvent, Sticmac.EventSystem.Runtime
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1259291805}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1259291807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: b4b0cc452a2128cee8640d45fa6d4365, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 97c2ec860513becb297f01d5558df2fb, type: 2}
+        m_TargetAssemblyTypeName: Sticmac.EventSystem.GameEvent, Sticmac.EventSystem.Runtime
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1259291808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291804}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8c1f47d43cba60589383add66ffbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dialogElements:
+  - message: Salut !
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: Aaaaaaaaaaaaaaaaaaaah !
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "D\xE9sol\xE9 ! Je ne voulais pas te surprendre ! Je suis tomb\xE9 ici
+      et je cherche \xE0 remonter \xE0 la surface..."
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: Ah... euh... bonjour !
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "Je ne m'attendais pas \xE0 trouver quelqu'un ici."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: Moi c'est Thermaude et toi ?
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: Lumi. Tu sais comment on fait pour remonter ?
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: "Je voudrais bien t'aider mais le chemin est bloqu\xE9..."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "On pourrait d\xE9blayer les pierres qui le bloquent mais il faudrait
+      travailler tous ensemble... et \xE7a c'est impossible."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: Pourquoi donc ?
+    author: {fileID: 11400000, guid: 1950edacec68b779a829dbd87c739b43, type: 2}
+  - message: "Depuis un moment d\xE9j\xE0, on est de plus en plus f\xE2ch\xE9s les
+      uns avec les autres. Alors quand il y a un \xE9boulement, on ne coop\xE8re
+      plus, et rien n\u2019est r\xE9par\xE9."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "L\xE0 tu vois, par exemple, on est incapable de se mettre d'accord
+      sur ce qu'on va manger ce soir. On cherche le meilleur cuisinier mais personne
+      ne se d\xE9voue."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "Si je vous aide \xE0 trouver le cuisiner, vous m'aiderez \xE0 remonter
+      chez moi ?"
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "Ok ! Faisons \xE7a !"
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  - message: "Si \xE7a peut t'aider : dans le groupe, il y a quelqu\u2019un qui sait
+      tout cuisiner. M\xEAme si j\u2019adore Sandy, il y a quelqu\u2019un qui l\u2019a
+      d\xE9pass\xE9. J\u2019admire le talent de ces deux l\xE0."
+    author: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7, type: 2}
+  _onDialogStarted: {fileID: 11400000, guid: b4b0cc452a2128cee8640d45fa6d4365, type: 2}
+  _onDialogEnded: {fileID: 11400000, guid: fcdcb7d42cd361df8bf04d20bcbaa313, type: 2}
+  _onNewDialogElement: {fileID: 11400000, guid: 77f65194f2908aef09bd94849e1ab642,
+    type: 2}
+--- !u!4 &1259291809
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259291804}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.1492848, y: 0.64545536, z: -2.052834}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297643557
 GameObject:
   m_ObjectHideFlags: 0
@@ -3393,7 +3596,7 @@ RectTransform:
   - {fileID: 2111991236}
   - {fileID: 1009528443}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3606,7 +3809,7 @@ Transform:
   - {fileID: 137007361}
   - {fileID: 880753237}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1590597743
 GameObject:
@@ -3637,7 +3840,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1603351073
 GameObject:
@@ -3805,6 +4008,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1259291804}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1259291808}
+        m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4478,12 +4705,22 @@ PrefabInstance:
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.3925195
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.9197438
+      objectReference: {fileID: 0}
+    - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
@@ -4493,7 +4730,7 @@ PrefabInstance:
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 133.777
       objectReference: {fileID: 0}
     - target: {fileID: 6074136435615443792, guid: 53bdf0c12e2f04d38bc0d4916507f298,
         type: 3}
