@@ -12,5 +12,6 @@ public class ProbeFound : MonoBehaviour
         _initialAppearance.SetActive(false);
         _finalAppearance.SetActive(true);
         _character.position = _targetPosition.position;
+        _character.rotation = _targetPosition.rotation;
     }
 }
