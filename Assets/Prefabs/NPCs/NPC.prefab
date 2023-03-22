@@ -137,7 +137,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f272217dafc54d634b3f102d95b97cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiMaster: {fileID: 0}
   _dialog: {fileID: 3955584734844212847}
   _accusation: {fileID: 5703222445155220086}
 --- !u!1 &1893284448048205190
@@ -307,9 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _dialogElements: []
-  _onDialogStarted: {fileID: 11400000, guid: 97c2ec860513becb297f01d5558df2fb, type: 2}
-  _onDialogEnded: {fileID: 11400000, guid: fa589d9530d53412eb5f655a2b9badf2, type: 2}
-  _onNewDialogElement: {fileID: 11400000, guid: 77f65194f2908aef09bd94849e1ab642,
+  _onNewDialogTriggered: {fileID: 11400000, guid: 9ebeef6f07edb61d9bfab096677dc5ed,
     type: 2}
 --- !u!1 &5710057507076958341
 GameObject:

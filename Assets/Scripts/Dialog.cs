@@ -1,52 +1,33 @@
+using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
-using Sticmac.EventSystem;
 
 /// <summary>
 /// Handles the logic of a running dialog, going through the different messages it contains
 /// </summary>
-public class Dialog : MonoBehaviour
+public class Dialog : MonoBehaviour, IEnumerable<DialogElement>
 {
     [Header("Data")]
     [SerializeField] DialogElement[] _dialogElements;
 
     [Header("Events")]
-    [SerializeField] GameEvent _onDialogStarted;
-    [SerializeField] GameEvent _onDialogEnded;
-    [SerializeField] NewDialogElementEvent _onNewDialogElement;
+    [SerializeField] NewDialogEvent _onNewDialogTriggered;
 
-    private int _currentElementIndex;
-    private bool _started = false;
-
-    public void Next()
+    public IEnumerator<DialogElement> GetEnumerator()
     {
-        if (_started)
+        foreach (DialogElement de in _dialogElements)
         {
-            NextDialogElement();
-        }
-        else
-        {
-            TriggerDialog();
+            yield return de;
         }
     }
 
-    private void TriggerDialog()
+    IEnumerator IEnumerable.GetEnumerator()
     {
-        _currentElementIndex = -1;
-        _started = true;
-        NextDialogElement();
+        return GetEnumerator();
     }
 
-    private void NextDialogElement()
+    public void TriggerDialog()
     {
-        if (++_currentElementIndex < _dialogElements.Length)
-        {
-            _onDialogStarted.Raise();
-            _onNewDialogElement.Raise(_dialogElements[_currentElementIndex]);
-        }
-        else
-        {
-            _onDialogEnded.Raise();
-            _started = false;
-        }
+        _onNewDialogTriggered.Raise(this);
     }
 }

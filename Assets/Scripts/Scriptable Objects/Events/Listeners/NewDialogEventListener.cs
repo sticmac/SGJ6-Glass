@@ -2,12 +2,12 @@ using UnityEngine;
 using UnityEngine.Events;
 
 /// <summary>
-/// Listens to NewDialogElementEvent events and sends the corresponding data to listeners.
+/// Listens to NewDialogEvent events and sends the corresponding data to listeners.
 /// </summary>
-public class NewDialogElementEventListener : MonoBehaviour
+public class NewDialogEventListener : MonoBehaviour
 {
-    [SerializeField] NewDialogElementEvent _event;
-    public NewDialogElementEvent Event
+    [SerializeField] NewDialogEvent _event;
+    public NewDialogEvent Event
     {
         get => _event;
         set
@@ -18,9 +18,9 @@ public class NewDialogElementEventListener : MonoBehaviour
         }
     }
 
-    [SerializeField] UnityEvent<DialogElement> _unityEventResponse;
+    [SerializeField] UnityEvent<Dialog> _unityEventResponse;
 
-    public void InvokeUnityEventResponse(DialogElement value) => _unityEventResponse.Invoke(value);
+    public void InvokeUnityEventResponse(Dialog value) => _unityEventResponse.Invoke(value);
 
     private void OnEnable() {
         Event?.RegisterListener(this);
@@ -30,7 +30,7 @@ public class NewDialogElementEventListener : MonoBehaviour
         Event?.UnregisterListener(this);
     }
 
-    public void OnEventRaised(DialogElement value)
+    public void OnEventRaised(Dialog value)
     {
         InvokeUnityEventResponse(value);
     }

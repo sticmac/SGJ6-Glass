@@ -21,7 +21,7 @@ public class ActionChoiceUI : MonoBehaviour
     public void Show()
     {
         _actionChoiceWindow.SetActive(true);
-        _triggerDialogButton.onClick.AddListener(_currentNPCDialog.Next);
+        _triggerDialogButton.onClick.AddListener(_currentNPCDialog.TriggerDialog);
         _triggerAccusationButton.onClick.AddListener(_currentNPCAccusation.Accuse);
     }
 
