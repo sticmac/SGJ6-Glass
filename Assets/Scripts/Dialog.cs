@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// Handles the logic of a running dialog, going through the different messages it contains
@@ -12,6 +13,7 @@ public class Dialog : MonoBehaviour, IEnumerable<DialogElement>
 
     [Header("Events")]
     [SerializeField] NewDialogEvent _onNewDialogTriggered;
+    [SerializeField] UnityEvent _onDialogEnded;
 
     public IEnumerator<DialogElement> GetEnumerator()
     {
@@ -29,5 +31,10 @@ public class Dialog : MonoBehaviour, IEnumerable<DialogElement>
     public void TriggerDialog()
     {
         _onNewDialogTriggered.Raise(this);
+    }
+
+    public void EndDialog()
+    {
+        _onDialogEnded.Invoke();
     }
 }

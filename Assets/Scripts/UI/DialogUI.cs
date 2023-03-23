@@ -16,10 +16,12 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
     [SerializeField] TextMeshProUGUI _authorText;
     [SerializeField] TextMeshProUGUI _messageText;
 
+    private Dialog _currentDialog;
     private IEnumerator<DialogElement> _dialogEnumerator;
 
     public void Init(Dialog dialog)
     {
+        _currentDialog = dialog;
         _dialogEnumerator = dialog.GetEnumerator();
         Next();
         Show();
@@ -59,6 +61,7 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         else
         {
             Hide();
+            _currentDialog.EndDialog();
         }
     }
 
