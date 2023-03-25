@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] PlayerMovement _playerMovement;
     [SerializeField] PlayerInteractor _playerInteractor;
 
-    private void Start()
+    private void OnEnable()
     {
         // Subscribe to Move input
         _playerInput.actions.FindAction("Move").performed += Move;
@@ -21,6 +21,12 @@ public class PlayerController : MonoBehaviour
 
         // Subscribe to Interact input
         _playerInput.actions.FindAction("Interact").performed += Interact;
+    }
+
+    private void OnDisable() {
+        _playerInput.actions.FindAction("Move").performed -= Move;
+        _playerInput.actions.FindAction("Move").canceled -= Move;
+        _playerInput.actions.FindAction("Interact").performed -= Interact;
     }
 
     public void Move(InputAction.CallbackContext ctx)
