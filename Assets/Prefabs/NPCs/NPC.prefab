@@ -137,8 +137,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f272217dafc54d634b3f102d95b97cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _serializedSelectedGlassieNPCModel:
+    mode: 0
+    unityReference: {fileID: 11400000, guid: 9ae3580eb867728d8a7210b5a73547ea, type: 2}
+    rawReference:
+      rid: -2
   _dialog: {fileID: 3955584734844212847}
   _accusation: {fileID: 5703222445155220086}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &1893284448048205190
 GameObject:
   m_ObjectHideFlags: 0
@@ -308,6 +318,9 @@ MonoBehaviour:
   _dialogElements: []
   _onNewDialogTriggered: {fileID: 11400000, guid: 9ebeef6f07edb61d9bfab096677dc5ed,
     type: 2}
+  _onDialogEnded:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5710057507076958341
 GameObject:
   m_ObjectHideFlags: 0

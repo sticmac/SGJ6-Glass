@@ -6,7 +6,7 @@ using UnityEngine.Events;
 /// <summary>
 /// Handles the logic of a running dialog, going through the different messages it contains
 /// </summary>
-public class Dialog : MonoBehaviour, IEnumerable<DialogElement>
+public class Dialog : MonoBehaviour, IEnumerable<DialogElement>, ITriggerable, IEndable
 {
     [Header("Data")]
     [SerializeField] DialogElement[] _dialogElements;
@@ -28,12 +28,12 @@ public class Dialog : MonoBehaviour, IEnumerable<DialogElement>
         return GetEnumerator();
     }
 
-    public void TriggerDialog()
+    public void Trigger()
     {
         _onNewDialogTriggered.Raise(this);
     }
 
-    public void EndDialog()
+    public void End()
     {
         _onDialogEnded.Invoke();
     }

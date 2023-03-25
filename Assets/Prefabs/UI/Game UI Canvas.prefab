@@ -509,7 +509,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerInput: {fileID: 0}
-  _eventSystem: {fileID: 0}
 --- !u!114 &5955973523693102938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,6 +720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5955973523864165786}
   - component: {fileID: 5955973523864165785}
+  - component: {fileID: 1069079473805251314}
   m_Layer: 0
   m_Name: Game Over UI
   m_TagString: Untagged
@@ -758,10 +758,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 5955973523864165787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a315e4dcd012db79cb7ff74929c05357, type: 3}
+  m_Script: {fileID: 11500000, guid: 44614da7f5c75377b883c067cc149bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _gameOverWindow: {fileID: 5955973524075499493}
+  _targetUIObject: {fileID: 5955973524075499493}
+  _uiModeActivator: {fileID: 5955973523693102884}
+--- !u!114 &1069079473805251314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955973523864165787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7b6d512e0ec511b5b4896bf9d8cb2bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _responseActivationMode: 0
+  _event: {fileID: 11400000, guid: 9597bf237ab13a30d93b5ef15fa8d174, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5955973523864165785}
+        m_TargetAssemblyTypeName: GameOverUI, Assembly-CSharp
+        m_MethodName: Show
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5955973523901688774
 GameObject:
   m_ObjectHideFlags: 0
@@ -771,6 +801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5955973523901688773}
+  - component: {fileID: 4555625056083832419}
   - component: {fileID: 5955973523901688772}
   m_Layer: 0
   m_Name: Action Choice UI
@@ -800,6 +831,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1070, y: 515}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &4555625056083832419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955973523901688774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44614da7f5c75377b883c067cc149bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetUIObject: {fileID: 5955973524778637569}
+  _uiModeActivator: {fileID: 5955973523693102884}
 --- !u!114 &5955973523901688772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,9 +857,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebba7afdf76d1a628ab82daff860616c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _uiWindowActivator: {fileID: 4555625056083832419}
+  _serializedSelectedGlassieNPCModel:
+    mode: 0
+    unityReference: {fileID: 11400000, guid: 9ae3580eb867728d8a7210b5a73547ea, type: 2}
+    rawReference:
+      rid: -2
   _actionChoiceWindow: {fileID: 5955973524778637569}
   _triggerDialogButton: {fileID: 5955973525000237322}
   _triggerAccusationButton: {fileID: 5955973524769642488}
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
 --- !u!1 &5955973523993429346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1924,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5955973524586419679}
+  - component: {fileID: 7940518460930495385}
   - component: {fileID: 5955973524586419678}
   - component: {fileID: 7282905595511996348}
   - component: {fileID: 7264074572458340828}
@@ -1900,6 +1957,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &7940518460930495385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955973524586419672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44614da7f5c75377b883c067cc149bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetUIObject: {fileID: 5955973523583523632}
+  _uiModeActivator: {fileID: 5955973523693102884}
 --- !u!114 &5955973524586419678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,8 +1983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e76891205012290aa2edebf4a26390f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiModeActivator: {fileID: 5955973523693102884}
-  _dialogWindow: {fileID: 5955973523583523632}
+  _uiWindowActivator: {fileID: 7940518460930495385}
   _authorText: {fileID: 5955973525090523631}
   _messageText: {fileID: 5955973524510063998}
 --- !u!222 &7282905595511996348
@@ -2220,7 +2290,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2239,7 +2309,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5955973524769642495}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5955973523901688772}
+        m_TargetAssemblyTypeName: GlassieActionChoiceUI, Assembly-CSharp
+        m_MethodName: ShowAccusation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5955973524778637569
 GameObject:
   m_ObjectHideFlags: 0
@@ -2545,7 +2627,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2564,7 +2646,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5955973525000237321}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5955973523901688772}
+        m_TargetAssemblyTypeName: GlassieActionChoiceUI, Assembly-CSharp
+        m_MethodName: ShowDialog
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5955973525090523625
 GameObject:
   m_ObjectHideFlags: 0
@@ -2979,7 +3073,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2999,9 +3093,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: NPCUIMaster, Assembly-CSharp
-        m_MethodName: ExitUIMode
+      - m_Target: {fileID: 5955973523901688772}
+        m_TargetAssemblyTypeName: GlassieActionChoiceUI, Assembly-CSharp
+        m_MethodName: Hide
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

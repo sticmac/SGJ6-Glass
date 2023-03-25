@@ -4,7 +4,7 @@ using Sticmac.EventSystem;
 /// <summary>
 /// Handles the probe accusation and whether it's correct or not
 /// </summary>
-public class Accusation : MonoBehaviour
+public class Accusation : MonoBehaviour, ITriggerable
 {
     [Header("Parameters")]
     [SerializeField] bool _isProbe;
@@ -13,7 +13,7 @@ public class Accusation : MonoBehaviour
     [SerializeField] GameEvent _onProbeFound;
     [SerializeField] GameEvent _onProbeNotFound;
 
-    public void Accuse()
+    public void Trigger()
     {
         if (_isProbe)
         {

@@ -9,10 +9,9 @@ using TMPro;
 public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
 {
     [Header("UI System")]
-    [SerializeField] UIModeActivator _uiModeActivator;
+    [SerializeField] UIWindowActivator _uiWindowActivator;
 
     [Header("UI Elements")]
-    [SerializeField] GameObject _dialogWindow;
     [SerializeField] TextMeshProUGUI _authorText;
     [SerializeField] TextMeshProUGUI _messageText;
 
@@ -27,10 +26,6 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         Show();
     }
 
-    private void Reset()
-    {
-        _dialogWindow = gameObject;
-    }
 
     private void Start() {
         enabled = false;
@@ -38,16 +33,14 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
 
     public void Show()
     {
-        _dialogWindow.SetActive(true);
-        _uiModeActivator.Activate();
+        _uiWindowActivator.Show();
         StartCoroutine(Coroutines.DelayOneFrame(() => enabled = true)); // TODO: Find a better way to avoid click conflicts between player and IPointerClickHandler
         EventSystem.current.SetSelectedGameObject(gameObject); // Select current game object so that submit works
     }
-
+    
     public void Hide()
     {
-        _dialogWindow.SetActive(false);
-        _uiModeActivator.Deactivate();
+        _uiWindowActivator.Hide();
         enabled = false;
     }
 
@@ -61,7 +54,7 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         else
         {
             Hide();
-            _currentDialog.EndDialog();
+            _currentDialog.End();
         }
     }
 

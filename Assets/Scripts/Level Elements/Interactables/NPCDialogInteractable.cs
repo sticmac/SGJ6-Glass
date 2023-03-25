@@ -9,7 +9,7 @@ public class NPCDialogInteractable : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        _dialog.TriggerDialog();
+        _dialog.Trigger();
     }
 
     public void InteractorFarAway()

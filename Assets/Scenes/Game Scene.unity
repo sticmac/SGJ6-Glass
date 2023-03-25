@@ -872,6 +872,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 64b102cee9987e57b8da05ef20989f0e,
+        type: 2}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
       propertyPath: _actionChoiceUI
       value: 
       objectReference: {fileID: 1789296991}
@@ -1643,6 +1649,12 @@ PrefabInstance:
       propertyPath: _uiMaster
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: da33f0a10186b1ae59ef4a4f8df029aa,
+        type: 2}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _actionChoiceUI
@@ -5780,6 +5792,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: 04b0a6d2ce3670c99b71540c3b3dd9d7,
+        type: 2}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
       propertyPath: _actionChoiceUI
       value: 
       objectReference: {fileID: 1789296991}
@@ -8909,7 +8927,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1744588324}
         m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
-        m_MethodName: TriggerDialog
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9747,6 +9765,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: d3bdfa914fe9cdcf5be3d07514ab54b2,
+        type: 2}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
       propertyPath: _actionChoiceUI
       value: 
       objectReference: {fileID: 1789296991}
@@ -10320,6 +10344,12 @@ PrefabInstance:
       propertyPath: _uiMaster
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: e432f9d2fb08f8a39b39e2c233fab596,
+        type: 2}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
       propertyPath: _actionChoiceUI
@@ -12197,7 +12227,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1259291808}
         m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
-        m_MethodName: TriggerDialog
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14114,6 +14144,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
         type: 3}
+      propertyPath: _NPCCharacter
+      value: 
+      objectReference: {fileID: 11400000, guid: dbeb137a92367e0b9a9d885523eb9fdc,
+        type: 2}
+    - target: {fileID: 2206886749035377594, guid: 0049522e89d2c0de7a7fd3afaebe2395,
+        type: 3}
       propertyPath: _actionChoiceUI
       value: 
       objectReference: {fileID: 1789296991}
@@ -14197,6 +14233,31 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 845631887444348939, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845631887444348939, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845631887444348939, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845631887444348939, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 845631887444348939, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5955973523693102881, guid: 07968bb9905484b8d954289a2fbd6a84,
         type: 3}
       propertyPath: m_Name
@@ -14317,11 +14378,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5955973523901688772, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: _serializedSelectedGlassieNPCModel.mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5955973523901688772, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: _serializedSelectedGlassieNPCModel.unityReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9ae3580eb867728d8a7210b5a73547ea,
+        type: 2}
     - target: {fileID: 5955973524191926715, guid: 07968bb9905484b8d954289a2fbd6a84,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1361251260}
+    - target: {fileID: 6148833442539769326, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042133763273305428, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042133763273305428, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042133763273305428, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042133763273305428, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042133763273305428, guid: 07968bb9905484b8d954289a2fbd6a84,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07968bb9905484b8d954289a2fbd6a84, type: 3}
 --- !u!1001 &7584402024191044520
