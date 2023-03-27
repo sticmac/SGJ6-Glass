@@ -8,5 +8,5 @@ public class DialogElement
     [SerializeField] Character author;
 
     public string Message => message;
-    public INameable Author => author;
+    public ISpeaker Author => author;
 }

@@ -37,9 +37,10 @@ public class AudioManager : MonoBehaviour
         _backgroundMusic.clip = null;
     }
 
-    public void PlayBGS(AudioClip soundEffect) {
+    public void PlayBGS(AudioClip soundEffect, float pitch = 0) {
         if (_backgroundSoundEffect.clip != soundEffect) {
             _backgroundSoundEffect.clip = soundEffect;
+            _backgroundSoundEffect.pitch = pitch + 1;
             _backgroundSoundEffect.Play();
         }
     }
@@ -49,8 +50,10 @@ public class AudioManager : MonoBehaviour
         _backgroundSoundEffect.clip = null;
     }
 
-    public void PlaySoundEffect(AudioClip soundEffect) {
+    public void PlaySoundEffect(AudioClip soundEffect, float pitch = 0, float volume = 1) {
         _soundEffect.clip = soundEffect;
+        _soundEffect.pitch = pitch + 1;
+        _soundEffect.volume = volume;
         _soundEffect.Play();
     }
 }

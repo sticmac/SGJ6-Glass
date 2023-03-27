@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Verronique
   m_EditorClassIdentifier: 
   _name: Verronique
+  _voice: {fileID: 8300000, guid: 276bdeee48c5d0f649c1244d23f0c428, type: 3}
+  _voiceModulationAmplitude: 0.05

@@ -18,6 +18,8 @@ public class DialogUI : MonoBehaviour
 
     [Header("Parameters")]
     [SerializeField, Tooltip("Speed at which the message is displayed")] float _messageDisplaySpeed = 1f;
+    [SerializeField, Tooltip("Delay between each message update")] float _messageUpdateDelay = 0.05f;
+    [SerializeField] float _voiceVolume = 0.4f;
 
     private Dialog _currentDialog;
     private IEnumerator<DialogElement> _dialogEnumerator;
@@ -56,21 +58,30 @@ public class DialogUI : MonoBehaviour
     {
         _authorText.text = element.Author.Name;
         _isWrittingMessage = true;
-        StartCoroutine(DisplayDialogMessageCoroutine(element.Message));
+        StartCoroutine(DisplayDialogMessageCoroutine(element));
     }
 
-    private IEnumerator DisplayDialogMessageCoroutine(string message)
+    private IEnumerator DisplayDialogMessageCoroutine(DialogElement element)
     {
-        float currentMessagePosition = 0;
+        string message = element.Message;
+        _messageText.text = message;
+        _messageText.maxVisibleCharacters = 0;
 
-        while (_isWrittingMessage && currentMessagePosition < message.Length)
+        while (_isWrittingMessage && _messageText.maxVisibleCharacters < message.Length)
         {
-            _messageText.text = message.Substring(0, ((int)currentMessagePosition));
-            yield return null;
-            currentMessagePosition += _messageDisplaySpeed * Time.deltaTime;
+            // updates current message position after a frame
+            yield return new WaitForSeconds(_messageUpdateDelay);
+            _messageText.maxVisibleCharacters += Mathf.FloorToInt(_messageDisplaySpeed * _messageUpdateDelay);
+
+            // if the character has a voice, we play it after writing a letter
+            if (element.Author.Voice != null)
+            {
+                float pitch = Random.Range(-element.Author.VoiceModulationAmplitude, element.Author.VoiceModulationAmplitude);
+                AudioManager.Instance.PlaySoundEffect(element.Author.Voice, pitch, _voiceVolume);
+            }
         }
 
-        _messageText.text = message;
+        _messageText.maxVisibleCharacters = message.Length;
         _isWrittingMessage = false;
     }
 }
