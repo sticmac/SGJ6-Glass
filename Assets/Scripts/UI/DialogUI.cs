@@ -6,7 +6,7 @@ using TMPro;
 /// <summary>
 /// UI module for managing displayed dialogs
 /// </summary>
-public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
+public class DialogUI : MonoBehaviour
 {
     [Header("UI System")]
     [SerializeField] UIWindowActivator _uiWindowActivator;
@@ -23,29 +23,11 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         _currentDialog = dialog;
         _dialogEnumerator = dialog.GetEnumerator();
         Next();
-        Show();
-    }
-
-
-    private void Start() {
-        enabled = false;
-    }
-
-    public void Show()
-    {
         _uiWindowActivator.Show();
-        StartCoroutine(Coroutines.DelayOneFrame(() => enabled = true)); // TODO: Find a better way to avoid click conflicts between player and IPointerClickHandler
-        EventSystem.current.SetSelectedGameObject(gameObject); // Select current game object so that submit works
-    }
-    
-    public void Hide()
-    {
-        _uiWindowActivator.Hide();
-        enabled = false;
     }
 
     // Display next dialog element
-    private void Next()
+    public void Next()
     {
         if (_dialogEnumerator.MoveNext())
         {
@@ -53,7 +35,7 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         }
         else
         {
-            Hide();
+            _uiWindowActivator.Hide();
             _currentDialog.End();
         }
     }
@@ -63,9 +45,4 @@ public class DialogUI : MonoBehaviour, ISubmitHandler, IPointerClickHandler
         _authorText.text = element.Author.Name;
         _messageText.text = element.Message;
     }
-
-#region Event System
-    public void OnSubmit(BaseEventData eventData) => Next();
-    public void OnPointerClick(PointerEventData eventData) => Next();
-#endregion
 }

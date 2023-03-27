@@ -803,6 +803,7 @@ GameObject:
   - component: {fileID: 5955973523901688773}
   - component: {fileID: 4555625056083832419}
   - component: {fileID: 5955973523901688772}
+  - component: {fileID: 5962977321242156557}
   m_Layer: 0
   m_Name: Action Choice UI
   m_TagString: Untagged
@@ -858,6 +859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiWindowActivator: {fileID: 4555625056083832419}
+  _uiMenuNavigationSystem: {fileID: 5962977321242156557}
   _serializedSelectedGlassieNPCModel:
     mode: 0
     unityReference: {fileID: 11400000, guid: 9ae3580eb867728d8a7210b5a73547ea, type: 2}
@@ -871,6 +873,20 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
+--- !u!114 &5962977321242156557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955973523901688774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b9d262b83074cdb3b9632e5b12863bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 0}
+  _defaultSelectedObject: {fileID: 5955973525000237332}
 --- !u!1 &5955973523993429346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1929,6 +1945,7 @@ GameObject:
   - component: {fileID: 7282905595511996348}
   - component: {fileID: 7264074572458340828}
   - component: {fileID: 6603113081298191326}
+  - component: {fileID: 2837080864666692489}
   m_Layer: 0
   m_Name: Dialog UI
   m_TagString: Untagged
@@ -2052,6 +2069,43 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2837080864666692489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5955973524586419672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b241f67e47b12244c8ec11d9a37c6b52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 0}
+  _selectedActionMapName: UI
+  _selectedActionName: Next Dialog
+  _eventsActivationMode: 0
+  StartedUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  PerformedUnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5955973524586419678}
+        m_TargetAssemblyTypeName: DialogUI, Assembly-CSharp
+        m_MethodName: Next
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  CanceledUnityEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &5955973524676684555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,7 +2344,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
+    m_SelectedColor: {r: 1, g: 0.91205287, b: 0.5235849, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -2627,7 +2681,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
+    m_SelectedColor: {r: 1, g: 0.91205287, b: 0.5235849, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -3073,7 +3127,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.7490196}
+    m_SelectedColor: {r: 1, g: 0.91205287, b: 0.5235849, a: 0.7490196}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1

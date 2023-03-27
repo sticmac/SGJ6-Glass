@@ -11,6 +11,7 @@ public class GlassieActionChoiceUI : MonoBehaviour, ISerializationCallbackReceiv
 {
     [Header("UI System")]
     [SerializeField] UIWindowActivator _uiWindowActivator;
+    [SerializeField] UIMenuNavigationSystem _uiMenuNavigationSystem;
 
     [Header("Model")]
     [InspectorName("Selected Glassie NPC Model")]
@@ -46,15 +47,13 @@ public class GlassieActionChoiceUI : MonoBehaviour, ISerializationCallbackReceiv
     public void Show()
     {
         _uiWindowActivator.Show();
-        StartCoroutine(Coroutines.DelayOneFrame(
-            () => EventSystem.current.SetSelectedGameObject(_triggerDialogButton.gameObject)
-        ));
+        _uiMenuNavigationSystem.ActivateNextFrame();
     }
 
     public void Hide()
     {
         _uiWindowActivator.Hide();
-        EventSystem.current.SetSelectedGameObject(null);
+        _uiMenuNavigationSystem.Deactivate();
     }
 
     public void ShowDialog()

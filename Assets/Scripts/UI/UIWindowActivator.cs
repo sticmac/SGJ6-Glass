@@ -18,7 +18,9 @@ public class UIWindowActivator : MonoBehaviour
     public void Show()
     {
         _targetUIObject.SetActive(true);
-        _uiModeActivator.Activate();
+        StartCoroutine(
+            Coroutines.DelayOneFrame(() => _uiModeActivator.Activate())
+        );
     }
 
     public void Hide()
