@@ -182,27 +182,27 @@
       "url": "https://packages.unity.com"
     },
     "fr.sticmac.eventsystem": {
-      "version": "https://github.com/sticmac/unity-event-system.git",
+      "version": "1.0.1",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "489adb5463737a03bc43f207bd57e9c00b328d50"
+      "url": "https://package.openupm.com"
     },
     "fr.sticmac.inputactionlisteners": {
-      "version": "https://github.com/sticmac/unity-input-action-listeners.git",
+      "version": "1.1.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {
         "com.unity.inputsystem": "1.0.2"
       },
-      "hash": "3fc38e10c35bb64dc1481ca6f9442ba4550fbe83"
+      "url": "https://package.openupm.com"
     },
     "fr.sticmac.observablemodels": {
-      "version": "https://github.com/sticmac/unity-observable-models.git#upm",
+      "version": "2.0.0",
       "depth": 0,
-      "source": "git",
+      "source": "registry",
       "dependencies": {},
-      "hash": "5954e6a2dc2b79ed9b56b026abd127e61963ca3c"
+      "url": "https://package.openupm.com"
     },
     "net.tnrd.serializableinterface": {
       "version": "1.12.1",

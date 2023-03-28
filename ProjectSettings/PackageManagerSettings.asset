@@ -31,6 +31,9 @@ MonoBehaviour:
     m_Url: https://package.openupm.com
     m_Scopes:
     - com.openupm
+    - fr.sticmac.eventsystem
+    - fr.sticmac.inputactionlisteners
+    - fr.sticmac.observablemodels
     - net.tnrd.serializableinterface
     m_IsDefault: 0
     m_Capabilities: 0

@@ -11,9 +11,7 @@
     "com.unity.timeline": "1.6.4",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.7.8",
-    "fr.sticmac.eventsystem": "https://github.com/sticmac/unity-event-system.git",
-    "fr.sticmac.inputactionlisteners": "https://github.com/sticmac/unity-input-action-listeners.git",
-    "fr.sticmac.observablemodels": "https://github.com/sticmac/unity-observable-models.git#upm",
+    "net.tnrd.serializableinterface": "1.12.1",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -45,7 +43,9 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0",
-    "net.tnrd.serializableinterface": "1.12.1"
+    "fr.sticmac.eventsystem": "1.0.1",
+    "fr.sticmac.observablemodels": "2.0.0",
+    "fr.sticmac.inputactionlisteners": "1.1.0"
   },
   "scopedRegistries": [
     {
@@ -53,6 +53,9 @@
       "url": "https://package.openupm.com",
       "scopes": [
         "com.openupm",
+        "fr.sticmac.eventsystem",
+        "fr.sticmac.inputactionlisteners",
+        "fr.sticmac.observablemodels",
         "net.tnrd.serializableinterface"
       ]
     }
