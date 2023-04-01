@@ -7401,7 +7401,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 429325721}
         m_TargetAssemblyTypeName: Dialog, Assembly-CSharp
-        m_MethodName: TriggerDialog
+        m_MethodName: Trigger
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
