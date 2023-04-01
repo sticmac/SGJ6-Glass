@@ -2005,7 +2005,7 @@ MonoBehaviour:
   _messageText: {fileID: 5955973524510063998}
   _messageDisplaySpeed: 50
   _messageUpdateDelay: 0.05
-  _voiceVolume: 0.4
+  _voiceVolume: 0.2
 --- !u!222 &7282905595511996348
 CanvasRenderer:
   m_ObjectHideFlags: 0
