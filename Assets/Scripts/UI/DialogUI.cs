@@ -16,6 +16,9 @@ public class DialogUI : MonoBehaviour
     [SerializeField] TextMeshProUGUI _authorText;
     [SerializeField] TextMeshProUGUI _messageText;
 
+    [Header("Audio")]
+    [SerializeField] AudioClip _nextMessageSoundEffect;
+
     [Header("Parameters")]
     [SerializeField, Tooltip("Speed at which the message is displayed")] float _messageDisplaySpeed = 1f;
     [SerializeField, Tooltip("Delay between each message update")] float _messageUpdateDelay = 0.05f;
@@ -45,6 +48,7 @@ public class DialogUI : MonoBehaviour
         {
             // goes to next dialog element
             DisplayDialogElement(_dialogEnumerator.Current);
+            AudioManager.Instance.PlaySoundEffect(_nextMessageSoundEffect);
         }
         else
         {

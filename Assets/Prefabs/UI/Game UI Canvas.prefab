@@ -2044,6 +2044,8 @@ MonoBehaviour:
   _uiWindowActivator: {fileID: 7940518460930495385}
   _authorText: {fileID: 5955973525090523631}
   _messageText: {fileID: 5955973524510063998}
+  _nextMessageSoundEffect: {fileID: 8300000, guid: e5acb5fed776b9c478a0adc187f28676,
+    type: 3}
   _messageDisplaySpeed: 50
   _messageUpdateDelay: 0.05
   _voiceVolume: 0.2
